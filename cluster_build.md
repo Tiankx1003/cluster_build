@@ -1,7 +1,7 @@
 ### node0
  * install CentOS 6.8 minimal config network setting
 ```bash
-yum install -y vim tar rsync openssh openssh-clients libaio net-tools git ntp ntpdate ntp-doc
+yum install -y vim tar rsync openssh openssh-clients libaio net-tools git ntp ntpdate ntp-doc zip umzip
 service iptables status
 service iptables stop
 chkconfig iptables --list
@@ -81,6 +81,7 @@ vim ~/bin/jpsall
 vim ~/bin/hy
 chmod 777 ~/bin/*
 ```
+### hadoop
 ```bash
 tar -zxvf hadoop-2.7.2.tar.gz -C /opt/module/
 vim slaves
@@ -107,4 +108,115 @@ jpsall
 hy 0
 jpsall
 ```
-
+### hive
+```bash
+tar -zxvf apache-hive-2.3.0-bin.tar.gz -C ../module/
+mv apache-hive-2.3.0-bin/ hive-2.3.0/
+vim /etc/profile
+# export HIVE_HOME=/opt/module/hive-2.3.0
+# exprot PATH=$PATH:$HIVE_HOME/bin
+source /etc/profile
+cp /opt/module/hive-2.3.0/conf/hive-env.sh.template /opt/module/hive-2.3.0/conf/hive-env.sh
+echo 'export HADOOP_HOME=/opt/module/hadoop-2.7.2' >> /opt/module/hive-2.3.0/conf/hive-env.sh
+echo 'export HIVE_CONF_DIR=/opt/module/hive-2.3.0/conf' >> /opt/module/hive-2.3.0/conf/hive-env.sh
+hadoop fs -mkdir /tmp
+hadoop fs -mkdir -p /user/hive/warehouse
+hadoop fs -chmod g+w /tmp
+hadoop fs -chmod g+w /user/hive/warehouse
+tar -zxvf mysql-connector-java-5.1.27.tar.gz
+cp mysql-connector-java-5.1.27-bin.jar /opt/module/hive-2.3.0/lib/
+vim $HIVE_HOME/conf/hive-site.xml
+schematool -dbType mysql -initSchema
+hive --service metastore &
+hy 1
+hive
+```
+### mysql
+```bash
+rpm -qa|grep -i mysql
+sudo rpm -e --nodeps mysql-libs-5.1.73-7.el6.x86_64
+sudo rpm -ivh MySQL-server-5.6.24-1.el6.x86_64.rpm
+sudo cat /root/.mysql_secret
+sudo service mysql status
+sudo service mysql start
+sudo rpm -ivh MySQL-client-5.6.24-1.el6.x86_64.rpm
+mysql -uroot -pTFQsVMblhG6JoxhB
+```
+```sql
+SET PASSWORD=PASSWORD('root');
+use mysql;
+update user set host='%' where host='localhost';
+delete from user where Host='node1';
+delete from user where Host='127.0.0.1';
+delete from user where Host='::1';
+flush privileges;
+\q;
+```
+### Hive on Tez
+```bash
+tar -zxvf apache-tez-0.9.1-bin.tar.gz -C ../module/
+vim $HIVE_HOME/conf/hive-env.sh
+vim $HIVE_HOME/conf/hive-site.xml
+vim $HIVE_HOME/conf/tez-site.xml
+vim $HADOOP_HOME/etc/hadoop/yarn-site.xml
+xsync $HADOOP_HOME/etc/hadoop/yarn-site.xml
+hadoop fs -mkdir /tez
+hadoop fs -put /opt/module/tez-0.9.1/ /tez
+hadoop fs -ls /tez /tez/tez-0.9.1
+hive # 执行验证sql
+```
+```sh
+export TEZ_HOME=/opt/module/tez-0.9.1    #是你的tez的解压目录
+export TEZ_JARS=""
+for jar in `ls $TEZ_HOME |grep jar`; do
+    export TEZ_JARS=$TEZ_JARS:$TEZ_HOME/$jar
+done
+for jar in `ls $TEZ_HOME/lib`; do
+    export TEZ_JARS=$TEZ_JARS:$TEZ_HOME/lib/$jar
+done
+export HIVE_AUX_JARS_PATH=/opt/module/hadoop-2.7.2/share/hadoop/common/hadoop-lzo-0.4.20.jar$TEZ_JARS
+```
+```xml
+<!-- hive-site.xml -->
+<property>
+    <name>hive.execution.engine</name>
+    <value>tez</value>
+</property>
+<!-- yarn-site.xml -->
+<property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
+</property>
+```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+	<name>tez.lib.uris</name>
+	<value>${fs.defaultFS}/tez/tez-0.9.1,${fs.defaultFS}/tez/tez-0.9.1/lib</value>
+</property>
+<property>
+	<name>tez.lib.uris.classpath</name>
+	<value>${fs.defaultFS}/tez/tez-0.9.1,${fs.defaultFS}/tez/tez-0.9.1/lib</value>
+</property>
+<property>
+	<name>tez.use.cluster.hadoop-libs</name>
+	<value>true</value>
+</property>
+<property>
+	<name>tez.history.logging.service.class</name>
+	<value>org.apache.tez.dag.history.logging.ats.ATSHistoryLoggingService</value>
+</property>
+</configuration>
+```
+```sql
+create table student(id int,name string);
+insert into student values(1,'zhangshan');
+select * from student;
+```
+### spark compile
+```bash
+export MAVEN_OPTS="-Xmx2g -XX:MaxPermSize=512M -XX:ReservedCodeCacheSize=512m"
+./make-distribution.sh --name "hadoop2-without-hive" --tgz "-Pyarn,hadoop-provided,hadoop-2.6,parquet-provided"
+```
