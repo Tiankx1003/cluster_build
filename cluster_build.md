@@ -1,7 +1,7 @@
 ### node0
  * install CentOS 6.8 minimal config network setting
 ```bash
-yum install -y vim tar rsync openssh openssh-clients libaio net-tools git ntp ntpdate ntp-doc zip umzip
+yum install -y vim tar rsync openssh openssh-clients libaio net-tools git ntp ntpdate ntp-doc zip unzip
 service iptables status
 service iptables stop
 chkconfig iptables --list
@@ -92,16 +92,18 @@ vim core-site.xml
 vim hdfs-site.xml
 vim yarn-site.xml
 vim mapred-site.xml
-ehco $JAVA_HOME >> /opt/module/hadoop-2.7.2/etc/hadoop/mapred-env.sh
-ehco $JAVA_HOME >> /opt/module/hadoop-2.7.2/etc/hadoop/hadoop-env.sh
-ehco $JAVA_HOME >> /opt/module/hadoop-2.7.2/etc/hadoop/yarn-env.sh
+echo $JAVA_HOME >> /opt/module/hadoop-2.7.2/etc/hadoop/mapred-env.sh
+echo $JAVA_HOME >> /opt/module/hadoop-2.7.2/etc/hadoop/hadoop-env.sh
+echo $JAVA_HOME >> /opt/module/hadoop-2.7.2/etc/hadoop/yarn-env.sh
 # export JAVA_HOME=/opt/module/jdk1.8.0_144
 xsync /opt/module/hadoop-2.7.2
 sudo su root
-/home/tian/bin/xcall echo 'export HADOOP_HOME=/opt/module/hadoop-2.7.2' >> /etc/profile
-/home/tian/bin/xcall echo 'export PATH=$PATH:$HADOOP_HOME/bin' >> /etc/profile
+/home/tiankx/bin/xcall echo 'export HADOOP_HOME=/opt/module/hadoop-2.7.2' >> /etc/profile
+/home/tiankx/bin/xcall echo 'export PATH=$PATH:$HADOOP_HOME/bin' >> /etc/profile
 exit
-xsync hadoopo version
+xcall hadoop version
+vim $HADOOP_HOME/etc/hadoop/log4j.properties
+# log4j.logger.org.apache.hadoop.util.NativeCodeLoader=ERROR
 hdfs namenode -format
 hy 1
 jpsall
@@ -211,12 +213,58 @@ export HIVE_AUX_JARS_PATH=/opt/module/hadoop-2.7.2/share/hadoop/common/hadoop-lz
 </configuration>
 ```
 ```sql
-create table student(id int,name string);
-insert into student values(1,'zhangshan');
-select * from student;
+create table stu(id int,name string);
+insert into stu values(1,'zhangshan');
+select * from stu;
 ```
 ### spark compile
 ```bash
+tar -zxvf apache-maven-3.5.4-bin.tar.gz -C ../module/
+mv apache-maven-3.5.4/ maven-3.5.4/
+sudo vim /etc/profile
+# 添加maven环境变量
+vim /opt/module/maven-3.5.4/conf/settings.xml
 export MAVEN_OPTS="-Xmx2g -XX:MaxPermSize=512M -XX:ReservedCodeCacheSize=512m"
-./make-distribution.sh --name "hadoop2-without-hive" --tgz "-Pyarn,hadoop-provided,hadoop-2.6,parquet-provided"
+echo $MAVEN_OPTS
+# ./make-distribution.sh --name "hadoop2-without-hive" --tgz "-Pyarn,hadoop-provided,hadoop-2.6,parquet-provided"
+./dev/make-distribution.sh \
+--name "hadoop272-without-hive" \
+--tgz "-Pyarn,hadoop-provided,hadoop-2.7,parquet-provided,orc-provided" \
+-Dhadoop.version=2.7.2
+```
+
+```bash
+export MAVEN_OPTS="-Xmx2g -XX:ReservedCodeCacheSize=512m"
+echo $MAVEN_OPTS
+./dev/make-distribution.sh --name "hadoop272-without-hive" --tgz "-Pyarn,hadoop-provided,hadoop-2.7,parquet-provided,orc-provided" -Dhadoop.version=2.7.2"
+```
+```xml
+<repositories>
+  <repository>
+    <id>central</id>
+    <!-- This should be at top, it makes maven try the central repo first and then others and hence faster dep resolution -->
+    <name>Maven Repository</name>
+    <!--<url>https://repo.maven.apache.org/maven2</url>!-->
+    <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+    <releases>
+      <enabled>true</enabled> 
+    </releases>
+    <snapshots>
+      <enabled>false</enabled>
+    </snapshots>
+  </repository>
+</repositories>
+<pluginRepositories>
+  <pluginRepository>
+    <id>central</id>
+    <!--<url>https://repo.maven.apache.org/maven2</url>-->
+    <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+    <releases>
+      <enabled>true</enabled>
+    </releases>
+    <snapshots>
+      <enabled>false</enabled>
+    </snapshots>
+  </pluginRepository>
+</pluginRepositories>
 ```

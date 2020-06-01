@@ -1,0 +1,558 @@
+2020-05-30T13:31:46.368533Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:31:46.543320Z 0 [Warning] InnoDB: New log files created, LSN=45790
+2020-05-30T13:31:46.574477Z 0 [Warning] InnoDB: Creating foreign key constraint system tables.
+2020-05-30T13:31:46.632757Z 0 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: e8a895f7-a279-11ea-a66b-000c294466d6.
+2020-05-30T13:31:46.633951Z 0 [Warning] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+2020-05-30T13:31:46.635084Z 1 [Note] A temporary password is generated for root@localhost: iOae_M#l7jmn
+2020-05-30T13:33:00.183684Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:33:00.185888Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3004 ...
+2020-05-30T13:33:00.191735Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:33:00.191810Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:33:00.191819Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:33:00.191825Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:33:00.191830Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:33:00.191834Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:33:00.192070Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:33:00.192217Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:33:00.195501Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:33:00.204956Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:33:00.212221Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:33:00.218813Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:33:00.218846Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:33:00.218851Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:33:00.218859Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:33:00.822867Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:33:00.822913Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:33:00.822922Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:33:00.822931Z 0 [ERROR] Aborting
+
+2020-05-30T13:33:00.822983Z 0 [Note] Binlog end
+2020-05-30T13:33:00.823237Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:33:00.823653Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:33:01.341965Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:33:01.344183Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3039 ...
+2020-05-30T13:33:01.347544Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:33:01.347592Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:33:01.347596Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:33:01.347599Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:33:01.347602Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:33:01.347607Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:33:01.347846Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:33:01.347952Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:33:01.349543Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:33:01.356469Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:33:01.358437Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:33:01.369105Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:33:01.369133Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:33:01.369138Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:33:01.369145Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:33:01.973811Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:33:01.973899Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:33:01.973923Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:33:01.973945Z 0 [ERROR] Aborting
+
+2020-05-30T13:33:01.974029Z 0 [Note] Binlog end
+2020-05-30T13:33:01.974200Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:33:01.974967Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:33:02.587286Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:33:02.588862Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3073 ...
+2020-05-30T13:33:02.591947Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:33:02.591997Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:33:02.592003Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:33:02.592008Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:33:02.592012Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:33:02.592016Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:33:02.592248Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:33:02.592346Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:33:02.593694Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:33:02.600573Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:33:02.602188Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:33:02.613116Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:33:02.613148Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:33:02.613153Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:33:02.613161Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:33:03.216932Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:33:03.217016Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:33:03.217032Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:33:03.217046Z 0 [ERROR] Aborting
+
+2020-05-30T13:33:03.217109Z 0 [Note] Binlog end
+2020-05-30T13:33:03.217245Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:33:03.217938Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:33:03.899950Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:33:03.901390Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3106 ...
+2020-05-30T13:33:03.904042Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:33:03.904072Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:33:03.904077Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:33:03.904080Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:33:03.904083Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:33:03.904088Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:33:03.904309Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:33:03.904728Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:33:03.906229Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:33:03.913247Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:33:03.915010Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:33:03.925686Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:33:03.925717Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:33:03.925722Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:33:03.925730Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:33:04.530134Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:33:04.530200Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:33:04.530213Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:33:04.530227Z 0 [ERROR] Aborting
+
+2020-05-30T13:33:04.530285Z 0 [Note] Binlog end
+2020-05-30T13:33:04.530417Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:33:04.531036Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:33:05.096523Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:33:05.097986Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3140 ...
+2020-05-30T13:33:05.100580Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:33:05.100607Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:33:05.100612Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:33:05.100615Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:33:05.100618Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:33:05.100620Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:33:05.100833Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:33:05.100929Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:33:05.102427Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:33:05.109604Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:33:05.111382Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:33:05.122428Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:33:05.122457Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:33:05.122462Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:33:05.122470Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:33:05.727195Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:33:05.727265Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:33:05.727280Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:33:05.727297Z 0 [ERROR] Aborting
+
+2020-05-30T13:33:05.727367Z 0 [Note] Binlog end
+2020-05-30T13:33:05.727525Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:33:05.728522Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:35:25.891400Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:35:25.893081Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3182 ...
+2020-05-30T13:35:25.896334Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:35:25.896377Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:35:25.896391Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:35:25.896394Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:35:25.896397Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:35:25.896400Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:35:25.896955Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:35:25.897073Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:35:25.898695Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:35:25.905761Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:35:25.907827Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:35:25.918894Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:35:25.918927Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:35:25.918932Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:35:25.918939Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:35:26.522782Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:35:26.522843Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:35:26.522855Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:35:26.522867Z 0 [ERROR] Aborting
+
+2020-05-30T13:35:26.522921Z 0 [Note] Binlog end
+2020-05-30T13:35:26.523064Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:35:26.523901Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:35:27.048512Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:35:27.050409Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3216 ...
+2020-05-30T13:35:27.053768Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:35:27.053800Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:35:27.053805Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:35:27.053808Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:35:27.053811Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:35:27.053814Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:35:27.054069Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:35:27.054173Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:35:27.055654Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:35:27.062317Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:35:27.064481Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:35:27.074985Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:35:27.075014Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:35:27.075019Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:35:27.075027Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:35:27.679407Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:35:27.679457Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:35:27.679466Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:35:27.679476Z 0 [ERROR] Aborting
+
+2020-05-30T13:35:27.679524Z 0 [Note] Binlog end
+2020-05-30T13:35:27.679625Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:35:27.680057Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:35:28.346863Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:35:28.348313Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3250 ...
+2020-05-30T13:35:28.350942Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:35:28.350970Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:35:28.350974Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:35:28.350977Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:35:28.350980Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:35:28.350985Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:35:28.351197Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:35:28.351290Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:35:28.352598Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:35:28.359616Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:35:28.361724Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:35:28.372194Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:35:28.372222Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:35:28.372227Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:35:28.372235Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:35:28.976903Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:35:28.976994Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:35:28.977013Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:35:28.977031Z 0 [ERROR] Aborting
+
+2020-05-30T13:35:28.977155Z 0 [Note] Binlog end
+2020-05-30T13:35:28.977345Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:35:28.978518Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:35:29.586854Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:35:29.588326Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3284 ...
+2020-05-30T13:35:29.590953Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:35:29.590982Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:35:29.590986Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:35:29.590989Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:35:29.590992Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:35:29.590995Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:35:29.591212Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:35:29.591309Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:35:29.592752Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:35:29.600112Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:35:29.601812Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:35:29.612639Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:35:29.612676Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:35:29.612682Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:35:29.612689Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:35:30.218131Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:35:30.218203Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:35:30.218217Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:35:30.218232Z 0 [ERROR] Aborting
+
+2020-05-30T13:35:30.218313Z 0 [Note] Binlog end
+2020-05-30T13:35:30.218464Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:35:30.219220Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:35:30.885111Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:35:30.886582Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3318 ...
+2020-05-30T13:35:30.889168Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:35:30.889194Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:35:30.889200Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:35:30.889203Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:35:30.889206Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:35:30.889209Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:35:30.889421Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:35:30.889515Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:35:30.891181Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:35:30.897937Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:35:30.899663Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:35:30.910051Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:35:30.910092Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:35:30.910097Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:35:30.910106Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:35:31.514653Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:35:31.514727Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:35:31.514742Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:35:31.514758Z 0 [ERROR] Aborting
+
+2020-05-30T13:35:31.514825Z 0 [Note] Binlog end
+2020-05-30T13:35:31.515005Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:35:31.515948Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:41:02.452769Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:41:02.454729Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3367 ...
+2020-05-30T13:41:02.457664Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:41:02.457691Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:41:02.457695Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:41:02.457698Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:41:02.457700Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:41:02.457703Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:41:02.457981Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:41:02.458172Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:41:02.459922Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:41:02.467529Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:41:02.469781Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:41:02.480122Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:41:02.480160Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:41:02.480166Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:41:02.480174Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:41:03.084523Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:41:03.084601Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:41:03.084616Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:41:03.084632Z 0 [ERROR] Aborting
+
+2020-05-30T13:41:03.084702Z 0 [Note] Binlog end
+2020-05-30T13:41:03.085212Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:41:03.086003Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:41:03.558095Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:41:03.559550Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3402 ...
+2020-05-30T13:41:03.562123Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:41:03.562151Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:41:03.562154Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:41:03.562158Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:41:03.562161Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:41:03.562163Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:41:03.562378Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:41:03.562473Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:41:03.563886Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:41:03.571506Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:41:03.573243Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:41:03.584207Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:41:03.584249Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:41:03.584254Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:41:03.584264Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:41:04.189594Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:41:04.189693Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:41:04.189715Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:41:04.189733Z 0 [ERROR] Aborting
+
+2020-05-30T13:41:04.189805Z 0 [Note] Binlog end
+2020-05-30T13:41:04.189976Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:41:04.191225Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:41:04.843795Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:41:04.846179Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3435 ...
+2020-05-30T13:41:04.850219Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:41:04.850309Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:41:04.850314Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:41:04.850317Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:41:04.850320Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:41:04.850326Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:41:04.850602Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:41:04.850736Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:41:04.852313Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:41:04.859489Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:41:04.861081Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:41:04.871514Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:41:04.871551Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:41:04.871557Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:41:04.871564Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:41:05.475022Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:41:05.475088Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:41:05.475101Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:41:05.475115Z 0 [ERROR] Aborting
+
+2020-05-30T13:41:05.475178Z 0 [Note] Binlog end
+2020-05-30T13:41:05.475314Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:41:05.476066Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:41:06.055992Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:41:06.057878Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3469 ...
+2020-05-30T13:41:06.061936Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:41:06.061977Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:41:06.061983Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:41:06.061987Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:41:06.061990Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:41:06.061993Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:41:06.062315Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:41:06.062428Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:41:06.064397Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:41:06.072434Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:41:06.074156Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:41:06.085001Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:41:06.085043Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:41:06.085052Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:41:06.085063Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:41:06.689399Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:41:06.689456Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:41:06.689467Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:41:06.689479Z 0 [ERROR] Aborting
+
+2020-05-30T13:41:06.689533Z 0 [Note] Binlog end
+2020-05-30T13:41:06.689648Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:41:06.690205Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:41:07.310130Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:41:07.311700Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3503 ...
+2020-05-30T13:41:07.315437Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:41:07.315490Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:41:07.315495Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:41:07.315498Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:41:07.315504Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:41:07.315507Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:41:07.315748Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:41:07.316049Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:41:07.317683Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:41:07.324770Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:41:07.326365Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:41:07.336816Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:41:07.336849Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:41:07.336854Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:41:07.336862Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:41:07.940604Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:41:07.940636Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:41:07.940640Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:41:07.940645Z 0 [ERROR] Aborting
+
+2020-05-30T13:41:07.940669Z 0 [Note] Binlog end
+2020-05-30T13:41:07.940722Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:41:07.940920Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:43:16.623387Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:43:16.625622Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3619 ...
+2020-05-30T13:43:16.629259Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:43:16.629293Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:43:16.629297Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:43:16.629300Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:43:16.629304Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:43:16.629340Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:43:16.629626Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:43:16.629727Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:43:16.631564Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:43:16.639257Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:43:16.643197Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:43:16.653958Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:43:16.654030Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:43:16.654048Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:43:16.654072Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:43:17.259906Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:43:17.259988Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:43:17.260008Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:43:17.260026Z 0 [ERROR] Aborting
+
+2020-05-30T13:43:17.260091Z 0 [Note] Binlog end
+2020-05-30T13:43:17.260380Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:43:17.261127Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:43:17.839498Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:43:17.841187Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3653 ...
+2020-05-30T13:43:17.843955Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:43:17.843987Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:43:17.843992Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:43:17.843995Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:43:17.844000Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:43:17.844010Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:43:17.844227Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:43:17.844323Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:43:17.845809Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:43:17.852166Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:43:17.854073Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:43:17.864816Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:43:17.864855Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:43:17.864862Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:43:17.864870Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:43:18.467781Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:43:18.467852Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:43:18.467866Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:43:18.467879Z 0 [ERROR] Aborting
+
+2020-05-30T13:43:18.467932Z 0 [Note] Binlog end
+2020-05-30T13:43:18.468055Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:43:18.468708Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:43:19.066377Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:43:19.068073Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3687 ...
+2020-05-30T13:43:19.070700Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:43:19.070727Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:43:19.070731Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:43:19.070735Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:43:19.070738Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:43:19.070741Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:43:19.070956Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:43:19.071086Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:43:19.073362Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:43:19.080302Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:43:19.082129Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:43:19.093243Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:43:19.093283Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:43:19.093289Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:43:19.093297Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:43:19.697525Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:43:19.697593Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:43:19.697607Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:43:19.697620Z 0 [ERROR] Aborting
+
+2020-05-30T13:43:19.697673Z 0 [Note] Binlog end
+2020-05-30T13:43:19.697797Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:43:19.698523Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:43:20.335306Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:43:20.336791Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3721 ...
+2020-05-30T13:43:20.339544Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:43:20.339589Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:43:20.339601Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:43:20.339604Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:43:20.339608Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:43:20.339611Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:43:20.339845Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:43:20.339961Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:43:20.341742Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:43:20.348274Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:43:20.350250Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:43:20.360417Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:43:20.360467Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:43:20.360480Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:43:20.360493Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:43:20.964319Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:43:20.964401Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:43:20.964418Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:43:20.964433Z 0 [ERROR] Aborting
+
+2020-05-30T13:43:20.964497Z 0 [Note] Binlog end
+2020-05-30T13:43:20.964644Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:43:20.965477Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:43:21.577678Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:43:21.579203Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3755 ...
+2020-05-30T13:43:21.581737Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:43:21.581766Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:43:21.581771Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:43:21.581774Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:43:21.581779Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:43:21.581782Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:43:21.582033Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:43:21.582134Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:43:21.583411Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:43:21.589875Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:43:21.592243Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:43:21.603184Z 0 [ERROR] InnoDB: Operating system error number 13 in a file operation.
+2020-05-30T13:43:21.603238Z 0 [ERROR] InnoDB: The error means mysqld does not have the access rights to the directory.
+2020-05-30T13:43:21.603249Z 0 [ERROR] InnoDB: os_file_get_status() failed on './ibdata1'. Can't determine file permissions
+2020-05-30T13:43:21.603258Z 0 [ERROR] InnoDB: Plugin initialization aborted with error Generic error
+2020-05-30T13:43:22.207363Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2020-05-30T13:43:22.207459Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2020-05-30T13:43:22.207477Z 0 [ERROR] Failed to initialize plugins.
+2020-05-30T13:43:22.207493Z 0 [ERROR] Aborting
+
+2020-05-30T13:43:22.207563Z 0 [Note] Binlog end
+2020-05-30T13:43:22.207740Z 0 [Note] Shutting down plugin 'CSV'
+2020-05-30T13:43:22.208853Z 0 [Note] /usr/sbin/mysqld: Shutdown complete
+
+2020-05-30T13:45:57.800214Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2020-05-30T13:45:57.801967Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 3798 ...
+2020-05-30T13:45:57.806238Z 0 [Note] InnoDB: PUNCH HOLE support available
+2020-05-30T13:45:57.806290Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2020-05-30T13:45:57.806295Z 0 [Note] InnoDB: Uses event mutexes
+2020-05-30T13:45:57.806298Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2020-05-30T13:45:57.806303Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2020-05-30T13:45:57.806306Z 0 [Note] InnoDB: Using Linux native AIO
+2020-05-30T13:45:57.806577Z 0 [Note] InnoDB: Number of pools: 1
+2020-05-30T13:45:57.806710Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2020-05-30T13:45:57.809464Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2020-05-30T13:45:57.817025Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2020-05-30T13:45:57.819460Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2020-05-30T13:45:57.832823Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2020-05-30T13:45:57.846249Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2020-05-30T13:45:57.846338Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2020-05-30T13:45:57.859581Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2020-05-30T13:45:57.860209Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2020-05-30T13:45:57.860219Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2020-05-30T13:45:57.860533Z 0 [Note] InnoDB: Waiting for purge to start
+2020-05-30T13:45:57.911779Z 0 [Note] InnoDB: 5.7.16 started; log sequence number 2532034
+2020-05-30T13:45:57.912101Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2020-05-30T13:45:57.918633Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2020-05-30T13:45:57.919616Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2020-05-30T13:45:57.919824Z 0 [Note] IPv6 is available.
+2020-05-30T13:45:57.919857Z 0 [Note]   - '::' resolves to '::';
+2020-05-30T13:45:57.919884Z 0 [Note] Server socket created on IP: '::'.
+2020-05-30T13:45:57.920723Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2020-05-30T13:45:57.922619Z 0 [Note] InnoDB: Buffer pool(s) load completed at 200530 21:45:57
+2020-05-30T13:45:57.931608Z 0 [Note] Event Scheduler: Loaded 0 events
+2020-05-30T13:45:57.931750Z 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.7.16'  socket: '/var/lib/mysql/mysql.sock'  port: 3306  MySQL Community Server (GPL)
